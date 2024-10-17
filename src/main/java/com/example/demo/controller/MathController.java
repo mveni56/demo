@@ -26,7 +26,8 @@ public class MathController {
 
     @GetMapping("/volume")
     public @ResponseBody double volume(@RequestParam double l, @RequestParam double b, @RequestParam double h){
-        return mathService.volume(l,b,h);
+        double result= mathService.volume(l,b,h);
+        return result;
     }
 
 }
